@@ -12,7 +12,8 @@ COLUMNAS = {
     "TRIMESTRE": {"tipo": "int", "completitud": 98.0},
     "ITF": {"tipo": "int", "completitud": 75.0},
     "MAS_500": {"tipo": "string", "completitud": 90.0},
-    "GDECCFR": {"tipo": "int", "completitud": 70.0}
+    "GDECCFR": {"tipo": "int", "completitud": 70.0},
+    "NIVEL_ED": {"tipo": "int", "completitud": 88.0} # modificacion para incluir la columna NIVEL_ED
 }
 
 # 2 Estructura para almacenar los roles:
@@ -25,7 +26,7 @@ ROLES = {
         "umbral": 85.0
     },
     "investigador": {
-        "columnas": ["PONDERA", "ESTADO", "EDAD", "ITF", "GDECCFR", "MAS_500"],
+        "columnas": ["PONDERA", "ESTADO", "EDAD", "ITF", "GDECCFR", "MAS_500", "NIVEL_ED"],
         "criterio": "completitud",
         "orden": "B",
         "umbral": 75.0
@@ -35,7 +36,13 @@ ROLES = {
         "criterio": "completitud",
         "orden": "A",
         "umbral": None  # no se especifica umbral
-    }
+    },
+    "auditor": {                            #Modificacion para incluir el rol auditor
+        "columnas": list(COLUMNAS.keys()),  # Incluye todas las columnas 
+        "criterio": "nombre",
+        "orden": "B",                       # "B" indica orden descendente 
+        "umbral": None                      # Sin umbral de completitud para ver todas
+    }                 
 }
 
 #FUNCIONES AUXILIARES 

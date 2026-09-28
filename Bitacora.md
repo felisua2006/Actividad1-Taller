@@ -50,3 +50,22 @@ Acá anoto más o menos lo que fui haciendo en el código para no perderme y ten
 
 ## Pruebas
 - Abrí el notebook, importé el archivo `programa.py` y corrí los tres perfiles y me tiro los tres perfiles 
+
+## Modificaciones 
+- Rol de Audito se agrego sin tanta modificacion al final de Roles 
+    a columnas le asignamos todas las columnas'
+    criterio pusimos nombre para que el ordenamiento se base en los nombres de las columnas
+    orde b asi va de manera decendente
+
+-Columna NIVEL_ED 
+    para agregarla lo unico que hicimos es agregarla el diccionario de columnas al final con sus caracteristicas
+
+    Aparece en el informe general o sin rol ya que en el rol docente investigador y analista no aparece
+    definida
+
+    y aparece en el informe general (sin rol)
+
+-Filter()
+    lo utilize para filtrar columnas segun el umbral de completitud dentro de la funcion principal
+    la ventaja que tiene del for es que es mas simple de usar mas legible y eficiencia de memoria
+
