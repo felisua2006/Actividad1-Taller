@@ -26,7 +26,7 @@ ROLES = {
         "umbral": 85.0
     },
     "investigador": {
-        "columnas": ["PONDERA", "ESTADO", "EDAD", "ITF", "GDECCFR", "MAS_500", "NIVEL_ED"],
+        "columnas": ["PONDERA", "ESTADO", "EDAD", "ITF", "GDECCFR", "MAS_500"],
         "criterio": "completitud",
         "orden": "B",
         "umbral": 75.0
